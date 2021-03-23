@@ -1191,7 +1191,7 @@ class Csv {
                     $first = $value;
                 } elseif ($value == $first && $equal !== false) {
                     $equal = true;
-                } elseif ($value == $first + 1 && $equal !== false) {
+                } elseif (($value == $first + 1 || $value == $first - 1) && $equal !== false) {
                     $equal = true;
                     $almost = true;
                 } else {
